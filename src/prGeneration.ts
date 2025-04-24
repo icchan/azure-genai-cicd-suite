@@ -3,7 +3,7 @@ import { AzureOpenAI } from "openai";
 // using abosolute path to import the functions from testGenerator.ts
 import { invokeModel, PullRequest } from '@/src/utils';
 
-const PR_DESCRIPTION_HEADER = "🤖 AI-Generated PR Description (Powered by Amazon Bedrock)";
+const PR_DESCRIPTION_HEADER = "🤖 AI-Generated PR Description (Powered by Azure OpenAI)";
 
 const pr_generation_prompt =
 `
