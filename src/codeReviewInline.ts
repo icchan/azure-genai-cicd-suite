@@ -4,7 +4,7 @@ import { AzureOpenAI } from "openai";
 import { invokeModel, PullRequest, PullFile, shouldExcludeFile, languageCodeToName, LanguageCode } from '@/src/utils';
 import { Inputs, Prompts} from '@/src/prompts';
 
-const CODE_REVIEW_HEADER = "🔍 AI Code Review (Powered by Amazon Bedrock)";
+const CODE_REVIEW_HEADER = "🔍 AI Code Review (Powered by Azure OpenAI)";
 
 export async function generateCodeReviewComment(azClient: AzureOpenAI, deployment: string, octokit: ReturnType<typeof getOctokit>, excludePatterns: string[], reviewLevel: string, outputLanguage: string): Promise<void> {
 
