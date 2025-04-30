@@ -35959,7 +35959,7 @@ exports.generatePRDescription = generatePRDescription;
 const github_1 = __nccwpck_require__(3228);
 // using abosolute path to import the functions from testGenerator.ts
 const utils_1 = __nccwpck_require__(5804);
-const PR_DESCRIPTION_HEADER = "🤖 AI-Generated PR Description (Powered by Amazon Bedrock)";
+const PR_DESCRIPTION_HEADER = "🤖 AI-Generated PR Description (Powered by Azure OpenAI)";
 const pr_generation_prompt = `
 <task context>
 You are a developer tasked with creating a pull request (PR) for a software project. Your primary goal is to provide a clear and informative description of the changes you are proposing.
