@@ -35724,7 +35724,7 @@ const core = __importStar(__nccwpck_require__(7484));
 const github_1 = __nccwpck_require__(3228);
 const utils_1 = __nccwpck_require__(5804);
 const prompts_1 = __nccwpck_require__(6224);
-const CODE_REVIEW_HEADER = "🔍 AI Code Review (Powered by Amazon Bedrock)";
+const CODE_REVIEW_HEADER = "🔍 AI Code Review (Powered by Azure OpenAI)";
 async function generateCodeReviewComment(azClient, deployment, octokit, excludePatterns, reviewLevel, outputLanguage) {
     const pullRequest = github_1.context.payload.pull_request;
     const repo = github_1.context.repo;
