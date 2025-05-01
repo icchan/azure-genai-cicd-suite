@@ -52,7 +52,7 @@ jobs:
         fi
 
     - name: Intelligent GitHub Actions
-      uses: tomomi-code/azure-genai-cicd-suite@test2
+      uses: tomomi-code/azure-genai-cicd-suite@main
       with:
         # Automatic Provision: The GITHUB_TOKEN is automatically created and provided by GitHub for each workflow run. You don't need to manually create or store this token as a secret.
         github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -60,7 +60,7 @@ jobs:
         azure-openai-api-key: ${{ secrets.AZURE_OPENAI_API_KEY }}
         azure-openai-endpoint: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
         azure-openai-version: '2024-04-01-preview'
-        azure-openai-deployment: TestGK
+        azure-openai-deployment: ${{ secrets.AZURE_OPENAI_DEPLOYMENT }}
         azure-openai-temperature: '0.7'
 
         generate-code-review: 'true'
