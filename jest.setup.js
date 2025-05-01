@@ -17,7 +17,7 @@ jest.mock('@actions/github', () => ({
   getOctokit: jest.fn(),
 }));
 
-jest.mock('@aws-sdk/client-bedrock-runtime', () => ({
-  BedrockRuntimeClient: jest.fn(),
-  InvokeModelCommand: jest.fn(),
-}));
+// jest.mock('@aws-sdk/client-bedrock-runtime', () => ({
+//   BedrockRuntimeClient: jest.fn(),
+//   InvokeModelCommand: jest.fn(),
+// }));

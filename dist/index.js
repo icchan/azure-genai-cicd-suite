@@ -35724,7 +35724,7 @@ const core = __importStar(__nccwpck_require__(7484));
 const github_1 = __nccwpck_require__(3228);
 const utils_1 = __nccwpck_require__(5804);
 const prompts_1 = __nccwpck_require__(6224);
-const CODE_REVIEW_HEADER = "🔍 AI Code Review (Powered by Amazon Bedrock)";
+const CODE_REVIEW_HEADER = "🔍 AI Code Review (Powered by Azure OpenAI)";
 async function generateCodeReviewComment(azClient, deployment, octokit, excludePatterns, reviewLevel, outputLanguage) {
     const pullRequest = github_1.context.payload.pull_request;
     const repo = github_1.context.repo;
@@ -35959,7 +35959,7 @@ exports.generatePRDescription = generatePRDescription;
 const github_1 = __nccwpck_require__(3228);
 // using abosolute path to import the functions from testGenerator.ts
 const utils_1 = __nccwpck_require__(5804);
-const PR_DESCRIPTION_HEADER = "🤖 AI-Generated PR Description (Powered by Amazon Bedrock)";
+const PR_DESCRIPTION_HEADER = "🤖 AI-Generated PR Description (Powered by Azure OpenAI)";
 const pr_generation_prompt = `
 <task context>
 You are a developer tasked with creating a pull request (PR) for a software project. Your primary goal is to provide a clear and informative description of the changes you are proposing.
